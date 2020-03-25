@@ -16,10 +16,12 @@ import { CategoryComponent } from './category/category.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductService } from './services/product.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, SlideComponent, ServicesComponent, ProductManagerComponent, ProductListComponent, ProductComponent, NotFoundComponent, HomeComponent, ContactComponent, CategoryComponent, AddProductComponent, AboutComponent, ProductDetailComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ProductService]
 })
 export class AppModule { }
